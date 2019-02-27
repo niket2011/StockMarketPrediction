@@ -1,0 +1,8 @@
+# StockMarketPrediction
+Forecasting involves predicting values for a variable using its historical data points or it can also involve predicting the change in one variable given the change in the value of another variable.
+I have used the ARIMA model in my approach to analyse the data and forecast the future values.ARIMA stands for Autoregressive Integrated Moving Average. ARIMA is also known as Box-Jenkins approach.
+The ARIMA model combines three basic methods:
+AutoRegression (AR) – In auto-regression, the values of a given time series data are regressed on their own lagged values, which is indicated by the “p” value in the ARIMA model.
+Differencing (I-for Integrated) – This involves differencing the time series data to remove the trend and convert a non-stationary time series to a stationary one. This is indicated by the “d” value in the ARIMA model. If d = 1, it looks at the difference between two-time series entries, if d = 2 it looks at the differences of the differences obtained at d =1, and so forth.
+Moving Average (MA) – The moving average nature of the ARIMA model is represented by the “q” value which is the number of lagged values of the error term.
+We used the ARIMA model to predict the future price of Gold using a training dataset of 100 values.We have achieved an error of 9% and this is because sample size was pretty less and to improve the accuracy we must consider a larger sample data so that there may not be any discrepancies in the future values.This entire model can be combined with shiny package in R to create a dashboard web application for multiple stocks and also for a better and a more efficient prediction.
